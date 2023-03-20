@@ -86,7 +86,7 @@ class Mydataset(data.Dataset):
 
 if __name__ == "__main__":
     predict_loss_all_all = []
-    for u in range(1):
+    for u in range(100):
         batch_size = 10+10*u
         # 超参数设置
         # batch_size = 10
