@@ -163,12 +163,6 @@ if __name__ == "__main__":
 
                 if i ==25:
                     print("predict_loss",predict_loss)
-                    data_plt1 = data_in[0,:,0:3000:2].cpu().detach().numpy()+data_in[0,:,1:3000:2].cpu().detach().numpy()*1j
-                    data_plt2 = data_in[2,:,0:3000:2].cpu().detach().numpy()+data_in[2,:,1:3000:2].cpu().detach().numpy()*1j
-                    data_plt3 = data_in[4,:,0:3000:2].cpu().detach().numpy()+data_in[4,:,1:3000:2].cpu().detach().numpy()*1j
-                    data_plt4 = data_in[6,:,0:3000:2].cpu().detach().numpy()+data_in[6,:,1:3000:2].cpu().detach().numpy()*1j
-                    data_plt5 = data_in[8,:,0:3000:2].cpu().detach().numpy()+data_in[8,:,1:3000:2].cpu().detach().numpy()*1j
-                    data_plt6 = data_in[9,:,0:3000:2].cpu().detach().numpy()+data_in[9,:,1:3000:2].cpu().detach().numpy()*1j 
 
                     predict_plt1 = predict[0,:,0:3000:2].cpu().detach().numpy()+predict[0,:,1:3000:2].cpu().detach().numpy()*1j
                     predict_plt2 = predict[2,:,0:3000:2].cpu().detach().numpy()+predict[2,:,1:3000:2].cpu().detach().numpy()*1j
