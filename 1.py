@@ -141,16 +141,7 @@ if __name__ == "__main__":
     #        if (epoch) % 5 == 0:
     #            print("epoch: {}, loss is {}".format((epoch), loss.data))
             epoch_plt.append(epoch)
-    
-        plt.ioff()
-        plt.savefig("/home/Jianghelin/code/Autoencoder/batch_size_value/pic_save/epoch_loss/epoch_loss{}.png".format(u))
-        plt.show()
-        torch.save(model, '/home/Jianghelin/code/Autoencoder/batch_size_value/autoencoder/autoencoder{}.pth'.format(u))
-        np.savetxt( '/home/Jianghelin/code/Autoencoder/batch_size_value/Training_Mean_Loss/Training_Mean_Loss{}.txt'.format(u), train_mean_loss)
 
-
-        model1 = torch.load('/home/Jianghelin/code/Autoencoder/batch_size_value/autoencoder/autoencoder{}.pth'.format(u))
- 
             test_dataset = Mydataset(root,batch_idx)
             test_data = DataLoader(test_dataset, shuffle=True, batch_size=batch_size, drop_last=True)
     #        if hasattr(torch.cuda, 'empty_cache'):
